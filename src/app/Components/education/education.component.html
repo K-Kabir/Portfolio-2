@@ -1,1 +1,15 @@
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo recusandae porro animi, culpa laudantium vitae rem, eius, numquam harum itaque eligendi minima? Distinctio velit quae aut id? Earum voluptatibus culpa placeat magni itaque ut quo, expedita debitis mollitia, non, est inventore beatae quaerat nostrum sunt. Unde eveniet ipsum, perferendis, libero tempore ab architecto perspiciatis, aut quo corporis repellendus minus ducimus impedit. Cumque repudiandae harum, aut esse officiis corporis reiciendis cum modi, consequuntur molestiae mollitia asperiores dignissimos a animi quis! Optio aperiam beatae quidem veniam inventore aliquam officiis eos, tempora eligendi maxime, consectetur explicabo impedit id, dolorum quibusdam illo. Nisi, nemo.
+<div class="container">
+    <div class="almas">
+        <div class="edu-container" *ngFor="let edu of education">
+            <i [class]="edu.icon" style="color: #4a83b5;"></i>
+            <div class="content">
+                <span class="heading">{{ edu.heading }}</span>
+                <span class="name">{{ edu.institution }}</span>
+                <span class="division">{{ edu.degree }}</span>
+            </div>
+        </div>
+    </div>
+    <div class="graduation">
+        Graduated with a major in <b>Electrical Engineering</b> and a minor in <b>Computer Engineering</b>
+    </div>
+</div>
